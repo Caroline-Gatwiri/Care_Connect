@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/sign_in">
+
+    <fragment
+        android:id="@+id/sign_in"
+        tools:layout="@layout/sign_in"
+        android:name="com.example.careconnect.SignInFragment"
+        android:label="sign_in" >
+        <action
+            android:id="@+id/action_sign_in_to_view_child_details"
+            app:destination="@id/view_child_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/view_child_details"
+        android:name="com.example.careconnect.view_child_details"
+        android:label="fragment_view_child_details"
+        tools:layout="@layout/fragment_view_child_details" />
+</navigation>

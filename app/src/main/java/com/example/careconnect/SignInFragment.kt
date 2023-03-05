@@ -11,23 +11,25 @@ import com.example.careconnect.databinding.SignInBinding
 class SignInFragment : Fragment() {
     lateinit var binding: SignInBinding
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         binding = SignInBinding.inflate(layoutInflater)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
         binding.apply {
-            btnProceedLogIn.setOnClickListener{
+            btnProceedLogIn.setOnClickListener {
+
+                // TODO: Validate inputs and 'SignIn State' before navigating
                 val route = R.id.action_sign_in_to_view_child_details
                 findNavController().navigate(route)
             }
         }
-        return binding.root
     }
 }
