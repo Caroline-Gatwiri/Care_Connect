@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "159501274897",
+    "project_id": "care-connect-23de0",
+    "storage_bucket": "care-connect-23de0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159501274897:android:9444cdafc60e57bcc7c6b0",
+        "android_client_info": {
+          "package_name": "com.example.careconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159501274897-n7orjn7afrumcdmtjcb4vjmp5d2sp6jr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkXdvBTknzlVffi0pyatC1csenRTmQ9-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159501274897-n7orjn7afrumcdmtjcb4vjmp5d2sp6jr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
