@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/sign_in"
         tools:layout="@layout/sign_in"
-        android:name="com.example.careconnect.SignInFragment"
+        android:name="com.example.careconnect.app.SignInFragment"
         android:label="sign_in" >
         <action
             android:id="@+id/action_sign_in_to_view_child_details"
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/view_child_details"
-        android:name="com.example.careconnect.view_child_details"
+        android:name="com.example.careconnect.app.view_child_details"
         android:label="fragment_view_child_details"
         tools:layout="@layout/fragment_view_child_details" />
 </navigation>
