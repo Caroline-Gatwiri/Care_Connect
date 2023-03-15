@@ -1,6 +1,6 @@
 package com.example.careconnect.app
 
-import com.example.careconnect.app.data.ApiService
+import com.example.careconnect.data.ApiService
 import com.google.firebase.auth.FirebaseAuth
 import com.example.careconnect.app.utils.Constants.BASE_URL
 import dagger.Module
@@ -15,6 +15,8 @@ import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 import kotlin.text.Typography.dagger
 
+@Module
+@InstallIn(SingletonComponent::class)
 object AppModule {
     @Provides
     fun providesFirebaseAuth(): FirebaseAuth {
