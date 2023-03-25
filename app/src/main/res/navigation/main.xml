@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/sign_in"
         tools:layout="@layout/sign_in"
-        android:name="com.example.careconnect.app.SignInFragment"
+        android:name="com.example.careconnect.app.LogInFragment"
         android:label="sign_in" >
         <action
             android:id="@+id/action_sign_in_to_view_child_details"
