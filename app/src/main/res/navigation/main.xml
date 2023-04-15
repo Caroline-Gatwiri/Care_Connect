@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/view_child_details"
-        android:name="com.example.careconnect.app.view_child_details"
+        android:name="com.example.careconnect.app.ViewChildDetails"
         android:label="fragment_view_child_details"
         tools:layout="@layout/fragment_view_child_details" />
 </navigation>

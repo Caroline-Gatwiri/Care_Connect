@@ -4,19 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".app.view_child_details">
+    tools:context=".app.ViewChildDetails">
 
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="148dp"
-        android:text="@string/fetch_data"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.272"
-        app:layout_constraintStart_toStartOf="parent" />
+     <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/recyclerView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         tools:listitem="@layout/list_children"/>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

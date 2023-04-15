@@ -1,5 +1,8 @@
 package com.example.careconnect.data
 
-interface ApiService {
+import retrofit2.http.GET
 
+interface ApiService {
+    @GET("api/child/test/")
+    suspend fun getAllChildren(): ChildDetails
 }
