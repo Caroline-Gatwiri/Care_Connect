@@ -14,8 +14,8 @@ data class Child(
     val guardianName: String,
     @SerializedName("guardian_phone")
     val guardianPhone: String,
-    @SerializedName("id")
-    val id: Int,
+    @SerializedName("_id")
+    val id: String,
     @SerializedName("location")
     val location: String
 )

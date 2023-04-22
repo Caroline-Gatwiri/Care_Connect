@@ -19,7 +19,7 @@ class ChildDetailsViewModel @Inject constructor(private val apiService: ApiServi
     fun getAllChildren(){
         viewModelScope.launch{
             try {
-                childResponse.value = apiService.getAllChildren().child
+                childResponse.value = apiService.getAllChildren()
             } catch (e: java.lang.Exception){
                 Timber.e("ERROR FETCHING!")
                 Timber.e(e.localizedMessage)

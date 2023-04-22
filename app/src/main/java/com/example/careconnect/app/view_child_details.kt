@@ -34,9 +34,9 @@ class ViewChildDetails : Fragment() {
             adapter = childDetailAdapter
         }
 
-        viewModel.childResponse.observe(viewLifecycleOwner){Child ->
-            if (Child.isNotEmpty()){
-                childDetailAdapter.updateData(Child)
+        viewModel.childResponse.observe(viewLifecycleOwner){children ->
+            if (children.isNotEmpty()){
+                childDetailAdapter.updateData(children)
                 childDetailAdapter.notifyDataSetChanged()
             }
         }

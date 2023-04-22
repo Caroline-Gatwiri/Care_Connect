@@ -4,5 +4,5 @@ import retrofit2.http.GET
 
 interface ApiService {
     @GET("api/children")
-    suspend fun getAllChildren(): ChildDetails
+    suspend fun getAllChildren(): List<Child>
 }

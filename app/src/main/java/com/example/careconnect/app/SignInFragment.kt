@@ -35,6 +35,9 @@ class LogInFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        if(viewModel.getCurrentUserID() != null){
+            findNavController().navigate(R.id.action_sign_in_to_view_child_details)
+        }
 
         binding.etLogInEmail.addTextChangedListener {
             val newText = binding.etLogInEmail.text.toString().trim()

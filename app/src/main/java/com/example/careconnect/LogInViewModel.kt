@@ -17,6 +17,8 @@ class LogInViewModel @Inject constructor(private val auth: FirebaseAuth) : ViewM
     var inputEmail = ""
     var inputPassword = ""
 
+    fun getCurrentUserID(): String? = auth.currentUser?.uid
+
     fun logInUser() {
         auth.signInWithEmailAndPassword(inputEmail, inputPassword)
             .addOnCompleteListener {
