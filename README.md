@@ -7,11 +7,7 @@ Care Connect is a mobile application designed to fetch and display up-to-date va
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Features](#features)
-- [Integration](#integration)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Description
 
